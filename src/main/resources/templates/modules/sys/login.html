@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro">
+<head>
+    <link rel="shortcut icon" href="../resources/favicon.ico" th:href="@{/static/favicon.ico}"/>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <script type="text/javascript">
+    </script>
+</head>
+<body>
+<form action="/login" method="post">
+    用户名 <input type="text" name="username">&emsp;
+    密&emsp;码 <input type="password" name="password">&emsp;
+    <input type="submit" value="登录">
+    <br/><br/><span th:text="${msg}" style="color: red; font-size: medium; font-weight: bold"></span>
+</form>
+</body>
+</html>
